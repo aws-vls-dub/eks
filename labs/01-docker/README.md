@@ -6,7 +6,7 @@ For this lab, you'll need to be in the `~/environment/eks/labs/01-docker` direct
 $ cd ~/environment/eks/labs/01-docker
 ```
 
-## Build image based on the Dockerfile
+## Build image based at the Dockerfile
 
 ```bash
 $ docker build -t python-app .
@@ -17,3 +17,7 @@ $ docker build -t python-app .
 ```bash
 $ docker run -p 5000:5000 python-app
 ```
+
+
+
+https://github.com/github-els-lin/eks/tree/master/labs/03-more-pods
