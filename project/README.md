@@ -59,7 +59,7 @@ Fill out the assesment in `project/assesment` and together with all the yaml fil
 
 Note:
 
-The zip file must be named as: `badgeNumber` + `Name` + `Surname`.zip, e.g.: `01GustavoSampaio.zip`
+The zip file must be named as: `AttendeeNumber` + `Name` + `Surname`.zip, e.g.: `01GustavoSampaio.zip`
 
 ### Setup - EKS Cluster
 
