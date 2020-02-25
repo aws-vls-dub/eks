@@ -55,11 +55,11 @@ Once you've completed the above tasks, try the following:
 
 ### Submission
 
-Fill out the assesment in `project/assesment` and together with all the yaml files used to solve the problem zip it and send to: `github-els-lin@amazon.com`.
+Fill out the assesment in `project/assesment` and together with all the yaml files used to solve the problem zip it and send to: ``.
 
 Note:
 
-The zip file must be named as: `AttendeeNumber` + `Name` + `Surname`.zip, e.g.: `01GustavoSampaio.zip`
+The zip file must be named as: `AttendeeNumber` + `Name` + `Surname`.zip, e.g.: `01JhonSnow.zip`
 
 ### Setup - EKS Cluster
 
