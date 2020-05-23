@@ -1,5 +1,4 @@
 # AWS Engineering Learning Series - EKS
-
 ## Labs
 
 - [Lab 1 - Building a Docker Image](./labs/01-docker)
@@ -91,7 +90,7 @@ The environment will be our workstation for the sessions, there are a few steps 
 #### Clone the repository
 
 ```bash
-$ git clone https://github.com/aws-els-cpt/eks.git
+$ git clone https://github.com/aws-vls-dub/eks.git
 ```
 
 #### Run the bootstrap script
