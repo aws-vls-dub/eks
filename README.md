@@ -23,6 +23,7 @@ Preferably right click an open it in a new tab.
 
 | Region          | CloudFormation     |
 | --------------- |:------------------:|
+| eu-central-1 (Frankfurt)       | [![Launch Stack](https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=eu-central-1#/stacks/create/review?stackName=cloud9&templateURL=https://eks2019.s3-ap-southeast-2.amazonaws.com/cloud9-template.yml) |
 | eu-west-1 (Ireland)       | [![Launch Stack](https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=eu-west-1#/stacks/create/review?stackName=cloud9&templateURL=https://eks2019.s3-ap-southeast-2.amazonaws.com/cloud9-template.yml) |
 | eu-north-1 (Stockholm)       | [![Launch Stack](https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=eu-north-1#/stacks/create/review?stackName=cloud9&templateURL=https://eks2019.s3-ap-southeast-2.amazonaws.com/cloud9-template.yml) |
 | us-east-1 (N. Virginia)       | [![Launch Stack](https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/create/review?stackName=cloud9&templateURL=https://eks2019.s3-ap-southeast-2.amazonaws.com/cloud9-template.yml) |
