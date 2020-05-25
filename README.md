@@ -57,7 +57,7 @@ Preferably right click an open it in a new tab.
 
 | Region          | EC2     |
 | --------------- |:------------------:|
-| eu-central-1 (Frankfurt)       | [Console link](https://eu-central-1.console.aws.amazon.com/cloud9/home?region=eu-west-1) |
+| eu-central-1 (Frankfurt)       | [Console link](https://eu-central-1.console.aws.amazon.com/cloud9/home?region=eu-central-1) |
 
  * Click Open IDE
 
