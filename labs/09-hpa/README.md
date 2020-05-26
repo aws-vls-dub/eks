@@ -1,6 +1,6 @@
-# Lab 7 - Working with ALB Ingress Controller:
+# Lab 9 - Working Horizontal Pod Autoscaler:
 
-## For this lab, you will need to install metric server on your Cluster, for more information you can check the docs: https://docs.aws.amazon.com/eks/latest/userguide/horizontal-pod-autoscaler.html
+### For this lab, you will need to install metric server on your Cluster, for more information you can check the docs: https://docs.aws.amazon.com/eks/latest/userguide/horizontal-pod-autoscaler.html
 
 
 1. Deploy the Metrics Server with the following command:
