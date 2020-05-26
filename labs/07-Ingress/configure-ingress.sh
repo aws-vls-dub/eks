@@ -38,5 +38,5 @@ sed '/- --ingress-class=alb/a \        \- --cluster-name='$CLUSTER'\
         \- --aws-vpc-id='$VPC_ID'\
         \- --aws-region='$REGION'' alb-ingress-controller.yaml.bkp > alb-ingress-controller.yaml
 
-echo 'Updating ingress"
+echo "Updating ingress"
 kubectl apply -f alb-ingress-controller.yaml
