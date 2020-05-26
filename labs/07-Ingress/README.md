@@ -14,7 +14,6 @@ $ kubectl get pods -n kube-system
 NAME                                      READY   STATUS    RESTARTS   AGE
 alb-ingress-controller-55b5bbcb5b-bc8q9   1/1     Running   0          56s
 ```
-To deploy a sample application
 
 ## Deploy the game 2048 as a sample application to verify that the ALB Ingress Controller creates an Application Load Balancer as a result of the Ingress object.
 
