@@ -57,24 +57,32 @@ service/webapp-prod exposed
 $ kubectl expose pod webapp-dev --port=80 -n dev
 service/webapp-dev exposed
 ```
+- now try to list all the resouces in prod and dev 
+```bash
+$ kubectl get all -n prod
+$ kubectl get all -n dev
+```
 
 - Connect to the service in both namespaces
 ```bash
-kubectl run curl --image=radial/busyboxplus:curl -i --tty
+$ kubectl run curl --image=radial/busyboxplus:curl -i --tty
 nslookup webapp-dev
 nslookup webapp-prod
+exit
 ```
 - Were you able to connect ? Why ?
 
 - Let's try creating the testing pod in each namespace
 ```bash
-kubectl run curl --image=radial/busyboxplus:curl -i --tty -n dev
+$ kubectl run curl --image=radial/busyboxplus:curl -i --tty -n dev
+nslookup webapp-dev
 curl webapp-dev
-kubectl run curl --image=radial/busyboxplus:curl -i --tty -n prod
+exit
+$ kubectl run curl --image=radial/busyboxplus:curl -i --tty -n prod
+nslookup webapp-prod
 curl webapp-prod
+exit
 ```
-
-- What about now?
 
 ---
 
