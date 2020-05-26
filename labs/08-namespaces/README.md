@@ -8,7 +8,7 @@ $ cd ~/environment/eks/labs/08-namespaces
 
 ## Define the namespaces
 
-Check the pod definition `namespaces.yaml` in the editor.
+Check the namespace definition `namespaces.yaml` in the editor.
 
 ```yaml
 apiVersion: v1
