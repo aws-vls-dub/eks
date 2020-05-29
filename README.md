@@ -96,6 +96,36 @@ $ eks/scripts/bootstrap.sh
 
 Confirm the IAM role is as expected
 
+### Launcing an EKS Cluster
+
+Launch your cluster from the Cloud9 environment by running the following `eksctl` command:
+
+```bash
+$ eksctl create cluster --version 1.16 --node-type t3.medium --name eks
+```
+
+### Ensure that you have nodes attached
+
+If you scaled down your cluster on Day 2 you can scale up using `eksctl` as follows:
+
+```bash
+$ eksctl get clusters
+$ eksctl get nodegroup --cluster eks
+$ eksctl scale nodegroup --cluster=eks --nodes=2 ng-xxxxxxx
+```
+---
+### Challenge submission
+
+Please access the page: https://deploymentels.support.aws.dev/ and click at the `Submit Challenge button`.
+
+1. Please Make sure that the image which you build can be accessed publicly. [ dockerhub public repo under your account]
+2. If you sucessfully build the application, add the LoadBalancer URL in a file called url.txt , with the http url **ONLY**
+3. Fill out the assesment in `project/assesment` and together with all the yaml files used to solve the problem and zip it and send to: `https://deploymentels.support.aws.dev/#uploadChallange`.
+4. Make sure to zip all the files without upper dir e.g.: `zip -r 01JhonSnow.zip *`
+Note:
+The zip file must be named as: `Name` + `Surname`.zip, e.g.: `01JhonSnow.zip`
+It will only be allowed zip files
+
 ---
 
 # Scaling Down your Worker Nodes
