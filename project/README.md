@@ -62,8 +62,8 @@ Please access the page: https://deploymentels.support.aws.dev/ and click at the 
 3. Fill out the assesment in [assesment/](https://github.com/aws-vls-dub/eks/tree/master/project/assessment) and together with all the yaml files used to solve the problem and zip it and send to: `https://deploymentels.support.aws.dev/#uploadChallange`.
 4. Make sure to zip all the files without upper dir e.g.: `zip -r 01JhonSnow.zip *`
 Note:
-The zip file must be named as: `Name` + `Surname`.zip, e.g.: `01JhonSnow.zip`
-It will only be allowed zip files
+- The zip file must be named as: `Name` + `Surname`.zip, e.g.: `01JhonSnow.zip`
+- It will **ONLY** be allowed **zip** files
 
 
 ### Setup - EKS Cluster
