@@ -116,7 +116,7 @@ $ eksctl scale nodegroup --cluster=eks --nodes=2 ng-xxxxxxx
 ---
 ### Challenge submission
 
-Please access the page: https://deploymentels.support.aws.dev/ and click at the `Submit Challenge button`.
+Please access the page: https://deploymentels.support.aws.dev/ and click at the `Submit Challenge` button.
 
 1. Please Make sure that the image which you build can be accessed publicly. [ dockerhub public repo under your account]
 2. If you sucessfully build the application, add the LoadBalancer URL in a file called url.txt , with the http url **ONLY**
