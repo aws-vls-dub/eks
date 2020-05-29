@@ -96,7 +96,7 @@ $ eks/scripts/bootstrap.sh
 
 Confirm the IAM role is as expected
 
-### Launcing an EKS Cluster
+### Launching the EKS Cluster
 
 Launch your cluster from the Cloud9 environment by running the following `eksctl` command:
 
