@@ -1,9 +1,8 @@
 #!/bin/sh
 
 CLUSTER=eks
-#REGION=$(curl -s http://169.254.169.254/latest/meta-data/placement/availability-zone | sed 's/\(.*\)[a-z]/\1/')
+REGION=$(curl -s http://169.254.169.254/latest/meta-data/placement/availability-zone | sed 's/\(.*\)[a-z]/\1/')
 VPC_ID=$(aws eks describe-cluster --name $CLUSTER | jq '.cluster.resourcesVpcConfig.vpcId' | sed 's/"//g')
-REGION=eu-west-1
 
 echo 'Create an IAM OIDC provider and associate it with the cluster.'
 eksctl utils associate-iam-oidc-provider --region $REGION --cluster $CLUSTER --approve
