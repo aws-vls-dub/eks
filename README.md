@@ -7,7 +7,7 @@
 - [Lab 4 - Labeling our Pods](./labs/04-labels)
 - [Lab 5 - Deployments](./labs/05-deployments)
 - [Lab 6 - Services](./labs/06-services)
-- [Lab 7 - Ingress](./labs/07-ingress)
+- [Lab 7 - Ingress](./labs/07-Ingress)
 - [Lab 8 - Namespaces](./labs/08-namespaces)
 - [Lab 9 - HPA](./labs/09-hpa)
 
