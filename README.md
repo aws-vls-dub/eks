@@ -101,7 +101,7 @@ Confirm the IAM role is as expected
 Launch your cluster from the Cloud9 environment by running the following `eksctl` command:
 
 ```bash
-$ eksctl create cluster --version 1.16 --node-type t3.medium --name eks
+$ eksctl create cluster --node-type t3.medium --name eks --managed
 ```
 
 ### Ensure that you have nodes attached
