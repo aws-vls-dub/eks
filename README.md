@@ -70,7 +70,7 @@ The environment will be our workstation for the sessions, there are a few steps 
 
 * From within the Cloud9 environment perform the below steps:
 
-  * Click on AWS Cloud9 (top left) > Preferences
+  * Click on AWS Cloud9 Preferences > GEAR (top left) 
   * Click on AWS SETTINGS > Credentials
   * Turn off 'AWS managed temporary credentials'
 
