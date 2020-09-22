@@ -26,12 +26,12 @@ Preferably right click an open it in a new tab.
 
 | Region          | CloudFormation     |
 | --------------- |:------------------:|
-| eu-central-1 (Frankfurt)       | [![Launch Stack](https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=eu-central-1#/stacks/create/review?stackName=cloud9&templateURL=https://eks2019.s3-ap-southeast-2.amazonaws.com/cloud9-template.yml) |
+| eu-central-1 (Frankfurt)       | [![Launch Stack](https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=eu-central-1#/stacks/create/review?stackName=cloud9&templateURL=https://els-2020.s3-eu-west-1.amazonaws.com/cloud9-template.yaml) |
 
 
 Just before clicking "Create stack" button, please tick "I acknowledge that AWS CloudFormation might create IAM resources."
 
-If you get stuck, the CloudFormation template is available [here](https://eks2019.s3-ap-southeast-2.amazonaws.com/cloud9-template.yml) and also in this [repo](./cloudformation/cloud9-template.yaml).
+If you get stuck, the CloudFormation template is available [here](https://els-2020.s3-eu-west-1.amazonaws.com/cloud9-template.yaml) and also in this [repo](./cloudformation/cloud9-template.yaml).
 
 ## 2. Attach the IAM Role to the Cloud9 instance
 
@@ -47,7 +47,7 @@ Preferably right click an open it in a new tab.
 
 
  * Select the Cloud9 instance
- * Click Actions > Instance Settings > Attach/Replace IAM Role
+ * Click Actions > Instance Settings > Modify IAM Role
  * Filter the roles, searching for "cloud9"
  * Click Apply once the role is selected
 
@@ -70,7 +70,7 @@ The environment will be our workstation for the sessions, there are a few steps 
 
 * From within the Cloud9 environment perform the below steps:
 
-  * Click on AWS Cloud9 (top left) > Preferences
+  * Click on AWS Cloud9 Preferences > GEAR (top left) 
   * Click on AWS SETTINGS > Credentials
   * Turn off 'AWS managed temporary credentials'
 
@@ -101,7 +101,7 @@ Confirm the IAM role is as expected
 Launch your cluster from the Cloud9 environment by running the following `eksctl` command:
 
 ```bash
-$ eksctl create cluster --version 1.16 --node-type t3.medium --name eks
+$ eksctl create cluster --node-type t3.medium --name eks --managed
 ```
 
 ### Ensure that you have nodes attached

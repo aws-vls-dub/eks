@@ -5,7 +5,7 @@
 echo "Installing kubectl"
 
 mkdir ~/bin
-curl -so ~/bin/kubectl https://amazon-eks.s3.us-west-2.amazonaws.com/1.16.8/2020-04-16/bin/linux/amd64/kubectl
+curl -so ~/bin/kubectl https://amazon-eks.s3.us-west-2.amazonaws.com/1.17.9/2020-08-04/bin/linux/amd64/kubectl
 chmod +x ~/bin/kubectl
 
 kubectl version --short --client
@@ -35,9 +35,15 @@ echo "AWS CLI version:"
 
 aws --version
 
-echo; echo "AWS identity:"
+echo; echo "Checking AWS identity:"
 
-aws sts get-caller-identity | jq -r '.Arn'
-
-echo; echo "You should expect to see the IAM Role we attached earlier, with an instance ID on the end"
-echo; echo "For example: arn:aws:sts::1234567890:assumed-role/cloud9-AdminRole-1VFO62P60OPQ1/i-07dfdf99d48eb10b0"
+C9ROLE=$(aws iam list-roles | jq -r '.Roles[] | select(.RoleName|match("Cloud9-AdminRole-*")) | .RoleName')
+ROLE=$(aws sts get-caller-identity | jq -r '.Arn')
+INSTANCEID=$(curl -s http://169.254.169.254/latest/meta-data/instance-id)
+ACCOUNT=$(aws sts get-caller-identity --query Account --output text)
+if [ $ROLE == "arn:aws:sts::$ACCOUNT:assumed-role/$C9ROLE/$INSTANCEID" ]
+then
+echo "Your AWS identity is correct"
+else
+echo "Please check the attached ROLE on C9"
+fi
