@@ -47,7 +47,7 @@ Preferably right click an open it in a new tab.
 
 
  * Select the Cloud9 instance
- * Click Actions > Instance Settings > Attach/Replace IAM Role
+ * Click Actions > Instance Settings > Modify IAM Role
  * Filter the roles, searching for "cloud9"
  * Click Apply once the role is selected
 
