@@ -4,7 +4,11 @@ metadata:
   name: web-app
 spec:
   ports:
+#Service port
   - port: 80
+#Pod port
     targetPort: 80
+  type: ClusterIP
   selector:
+#Labels used to link service to pods
     app: web-server
