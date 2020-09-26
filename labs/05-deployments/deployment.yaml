@@ -5,11 +5,13 @@ metadata:
 spec:
   replicas: 3
   selector:
+#Labels used to link deployment to pods
     matchLabels:
       app: web-server
   template:
     metadata:
       labels:
+#Labels that will be assigned to pods
         app: web-server
     spec:
       containers:
