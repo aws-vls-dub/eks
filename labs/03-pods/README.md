@@ -1,4 +1,4 @@
-# Lab 2 - Introduction to Pods
+# Lab 3 - Introduction to Pods
 
 For this lab, you'll need to be in the `~/environment/eks/labs/02-pods` directory in Cloud9:
 
