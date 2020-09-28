@@ -37,7 +37,7 @@ aws --version
 
 echo; echo "Checking AWS identity:"
 
-C9ROLE=$(aws iam list-roles | jq -r '.Roles[] | select(.RoleName|match("Cloud9-AdminRole-*")) | .RoleName')
+C9ROLE=$(aws iam list-roles | jq -r '.Roles[] | select(.RoleName|match("cloud9-AdminRole-*")) | .RoleName')
 ROLE=$(aws sts get-caller-identity | jq -r '.Arn')
 INSTANCEID=$(curl -s http://169.254.169.254/latest/meta-data/instance-id)
 ACCOUNT=$(aws sts get-caller-identity --query Account --output text)
